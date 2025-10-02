@@ -4,13 +4,23 @@ import java.util.ArrayList;
 
 import cl.aacp9.service.CalculadoraComplejaImpl;
 import cl.aacp9.service.CalculadoraSimpleImpl;
+import cl.aacp9.service.CalculadoraStockSeguridad;
 import cl.aacp9.utility.Utility;
 
 public class View {
 	public void despliegue() {
 		Utility utility = new Utility();
-		CalculadoraSimpleImpl calculadoraSimpleImpl=new CalculadoraSimpleImpl();
-		CalculadoraComplejaImpl calculadoraComplejaImpl=new CalculadoraComplejaImpl();
+		
+//		CalculadoraSimpleImpl calculadoraSimpleImpl=new CalculadoraSimpleImpl();
+//		CalculadoraComplejaImpl calculadoraComplejaImpl=new CalculadoraComplejaImpl();
+//		Interface											Clase que lo implementa
+		CalculadoraStockSeguridad calculadoraSimpleImpl=new CalculadoraSimpleImpl();
+		CalculadoraStockSeguridad calculadoraComplejaImpl=new CalculadoraComplejaImpl();
+//		tomado de la declaracion de un List
+//		Interface				Clase que implementa a List
+//		List<String> lista = new ArrayList<>();		
+		
+		
 		System.out.println("------------------------------------------");
 		System.out.println("Demostración Cálculo de Stock de Seguridad");
 		System.out.println("------------------------------------------");
